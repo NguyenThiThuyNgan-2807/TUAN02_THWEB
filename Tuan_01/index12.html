@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>FORM KHẢO SÁT Ý KIẾN NGƯỜI DÙNG</h1>
+    <form action="">
+        <label>Bạn hài lòng với dịch vụ của chúng tôi không?</label><br>
+        <input type="radio" name="satisfaction" value="yes">Hài lòng<br>
+        <input type="radio" name="satisfaction" value="no">Không hài lòng<br><br>
+
+        <label>Bạn sử dụng những dịch vụ nào của chúng tôi? (Chọn nhiều)</label><br>
+        <input type="checkbox" name="service" value="delivery">Giao hàng<br>
+        <input type="checkbox" name="service" value="take care">Chăm sóc khách hàng<br>
+        <input type="checkbox" name="service" value="warranty">Bảo hành<br><br>
+
+        <label>Độ tuổi của bạn:</label><br>
+        <select name="age">
+        <option value="under18">Dưới 18</option>
+        <option value="18-25">18 - 25</option>
+        <option value="26-35">26 - 35</option>
+        <option value="36plus">Trên 35</option>
+        </select><br><br>
+
+        <label>Góp ý thêm:</label><br>
+        <textarea name="feedback" rows="4" cols="40" placeholder="Nhập góp ý của bạn..."></textarea><br><br>
+        <button>Gửi phản hồi</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>FORM ĐẶT BÀN QUÁN ĂN</h1>
+    <form action="">
+        <label for="name">Họ và tên:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="people">Số người:</label><br>
+        <input type="number" id="people" name="people" min="1" max="20" required><br>
+        
+        <label for="datetime">Ngày và giờ đặt bàn:</label><br>
+        <input type="datetime-local" id="datetime" name="datetime" required><br><br>
+
+        <label for="note">Yêu cầu đặc biệt:</label><br>
+        <textarea id="note" name="note" rows="4" cols="40" placeholder="Nhập yêu cầu nếu có..."></textarea><br><br>
+
+        <button type="submit">Đặt bàn</button>
+    </form>
+</body>
+</html>
