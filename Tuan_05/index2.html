@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .error {
+            color: red;
+        }
+        
+        .success {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <input id="date" type="date">
+    <button id="check">Check</button>
+    <p id="result"></p>
+    <script>
+        var date = document.getElementById('date');
+        var check = document.getElementById('check');
+        var result = document.getElementById('result');
+
+        var mydate = new Date();
+        var myselfdate = new Date('2025-07-28');
+        console.log(myselfdate);
+
+        check.onclick = () => {
+            var mydate = new Date(date.value);
+            console.log(mydate);
+            if (mydate < myselfdate) {
+                result.innerText = "Ngày đã chọn là trước 28/07/2025";
+                result.className = "sucess";
+            } else {
+                result.innerText = "Ngày đã chọn là sau 28/07/2025"
+                result.className = "error";
+            };
+        }
+    </script>
+
+</body>
+
+</html>

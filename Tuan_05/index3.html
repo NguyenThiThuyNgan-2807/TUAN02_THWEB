@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .error {
+            color: red;
+        }
+        
+        .success {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="date" id="date">
+    <button onclick="check()">Check</button>
+    <p id="result"></p>
+    <script>
+        function check() {
+            var date = document.getElementById("date").value;
+            var result = document.getElementById("result");
+            var mydate = new Date(date);
+            var myselfdate = new Date('2025-07-28')
+            if (mydate < myselfdate) {
+                result.innerText = "Ngày sinh hợp lệ.";
+                result.className = "success";
+            } else if (mydate > myselfdate) {
+                result.innerText = "Ngày sinh không hợp lệ.";
+                result.className = "error";
+            } else {
+                result.innerText = "Ngày sinh hợp lệ.";
+                result.className = "success";
+            }
+        }
+    </script>
+</body>
+
+</html>
